@@ -1,0 +1,409 @@
+header {
+  background: #121212;
+  border-radius: 8px;
+}
+.header {
+  &__bkg {
+    height: 730px;
+    background: #121212;
+    background-image: url(../assets/images/Bitmap.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  &__space {
+    padding: 32px 0 36px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  &__nav {
+    @include nav;
+  }
+
+  a:hover {
+    color: #d87d4a;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__content {
+    padding: 128px 0 158px;
+    @include flex-c;
+
+    strong {
+      @extend %strong;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      @extend %title;
+      width: 396px;
+    }
+
+    p {
+      @extend %text;
+      width: 350px;
+    }
+  }
+}
+.stuff {
+  max-height: 572px;
+  padding-top: 200px;
+  padding-bottom: 168px;
+
+  &__item1 {
+    @include stuff;
+    @include flex-c;
+  }
+  &__item2 {
+    @include stuff;
+    @include flex-c;
+  }
+  &__item3 {
+    @include stuff;
+    @include flex-c;
+  }
+  &__imgtop {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 116px;
+  }
+  &__button {
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    background: none;
+    img {
+      margin-left: 13px;
+    }
+  }
+  &__button:hover {
+    background: none;
+    color: $orange;
+  }
+}
+
+.zx9speaker {
+  padding-bottom: 48px;
+
+  &__bkg {
+    height: 560px;
+    background: $orange;
+    border-radius: 8px;
+    background-image: url(../assets/images/rings.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: end;
+    gap: 128px;
+  }
+
+  &__photo {
+    width: 410px;
+    height: 493px;
+    background-image: url(../assets/images/zx9-speaker.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  &__content {
+    width: 359px;
+
+    &-title {
+      @extend %title;
+    }
+
+    &-text {
+      @extend %text;
+    }
+
+    &-button {
+      background: #000;
+      margin-bottom: 124px;
+    }
+    &-button:hover {
+      background: #4c4c4c;
+    }
+  }
+}
+
+.zx7speaker {
+  &__bkg {
+    border-radius: 8px;
+    background-image: url(../assets/images/zx7-speaker.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 101px 0px 101px 107px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    color: #000;
+    border: 1px solid #000;
+    background: none;
+  }
+  &__button:hover {
+    background-color: #000;
+    color: #ffffff;
+  }
+}
+.yx1earphones {
+  padding-top: 48px;
+  padding-bottom: 200px;
+
+  &__photo {
+    background-image: url(../assets/images/YX1-earphones.png);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 540px;
+    height: 320px;
+  }
+  &__content {
+    @include flex-c;
+    justify-content: center;
+    align-items: start;
+    background: #f1f1f1;
+    border-radius: 8px;
+    width: 540px;
+    height: 320px;
+    padding: 101px 200px 101px 95px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #000;
+    background: none;
+  }
+  &__button:hover {
+    background-color: #000;
+    color: #ffffff;
+  }
+}
+.promo {
+  padding-bottom: 200px;
+
+  &__title {
+    max-width: 445px;
+    @extend %title_2;
+    margin-bottom: 32px;
+  }
+  span {
+    color: $orange;
+  }
+  &__text {
+    @extend %text;
+    color: $f-c-b05;
+    max-width: 445px;
+  }
+
+  &__photo {
+    width: 540px;
+    height: 588px;
+    background-image: url(../assets/images/man.png);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+  }
+}
+
+.footer_bkg {
+  background-color: $bkg-header;
+  min-height: 345px;
+  padding-bottom: 48px;
+
+  &__line {
+    width: 101px;
+    background-image: url(..//assets/images/line.png);
+    background-repeat: no-repeat;
+    padding-bottom: 75px;
+    margin-left: 6%;
+  }
+}
+
+.bottomheader {
+  &__ul {
+    @include nav;
+    width: 430px;
+  }
+}
+
+.final {
+  align-items: flex-end;
+  margin-bottom: 56px;
+  &__text {
+    @extend %text;
+    color: $f-c-w05;
+    width: 540px;
+    margin-top: 36px;
+    margin-bottom: 0;
+  }
+
+  &__socialpage {
+    width: 104px;
+
+    &-fb {
+      width: 24px;
+      height: 24px;
+      background-image: url(../assets/images/Facebook.png);
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-in-out;
+    }
+    &-fb:hover {
+      background-image: url(..//assets/images/FacebookHover.png);
+      background-repeat: no-repeat;
+    }
+    &-tw {
+      width: 24px;
+      height: 24px;
+      background-image: url(../assets/images/Twitter.png);
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-in-out;
+    }
+    &-tw:hover {
+      background-image: url(..//assets/images/TwitterHover.png);
+      background-repeat: no-repeat;
+    }
+    &-insta {
+      width: 24px;
+      height: 24px;
+      background-image: url(../assets/images/insta.png);
+      background-repeat: no-repeat;
+      transition: all 0.5s ease-in-out;
+    }
+    &-insta:hover {
+      background-image: url(..//assets/images/instaHover.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+.copyright {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: $f-c-w05;
+}
+// PAGE 2 початок стилів Category-headphones-1
+
+.header2 {
+  background: #121212;
+  border-radius: 0px;
+  height: 336px;
+  h1 {
+    @extend %title_2;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 98px;
+    padding-bottom: 97px;
+  }
+}
+.XX99markII {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  &__photo {
+    @extend %product_bkg;
+    background-image: url(../assets/images/XX99MARK_II.png);
+  }
+
+  &__content {
+    @include flex-c;
+    align-items: start;
+    gap: 16px;
+    max-width: 445px;
+
+    &-title {
+      @extend %title_2;
+      margin-bottom: 16px;
+    }
+    &-strong {
+      @extend %strong;
+      color: $orange;
+    }
+    &-text {
+      @extend %text;
+      color: $f-c-b05;
+      margin-bottom: 24px;
+    }
+  }
+}
+.XX99markI {
+  padding-bottom: 160px;
+
+  &__photo {
+    @extend %product_bkg;
+    background-image: url(../assets/images/XX99MARK_I.png);
+  }
+
+  &__content {
+    width: 445px;
+    &-text {
+      @extend %text;
+      color: $f-c-b05;
+      margin-bottom: 40px;
+    }
+     &-title {
+      @extend %title_2;
+      margin-bottom: 32px;
+    }
+  }
+}
+.XX59 {
+
+  &__photo {
+    @extend %product_bkg;
+    background-image: url(../assets/images/XX59.png);
+  }
+
+  &__content {
+    width: 445px;
+    &-title {
+      @extend %title_2;
+      margin-bottom: 32px;
+      width: 300px;
+    }
+
+    &-text {
+      @extend %text;
+      color: $f-c-b05;
+      margin-bottom: 40px;
+    }
+  }
+}
+.stuff2{
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.promo2{
+  padding-bottom: 160px;
+}
+
+

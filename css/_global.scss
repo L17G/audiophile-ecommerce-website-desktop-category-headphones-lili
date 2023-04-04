@@ -1,0 +1,133 @@
+html,
+body,
+ul,
+h1,
+h4,
+h3,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #D87D4A;
+    padding: 15px 30.5px;
+    transition: all .5s ease-in-out;
+
+}
+button:hover {
+    background: #FBAF85;
+}
+body{
+    font-family: $f-f;
+    background-color: $white;
+}
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.fbx {display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+@mixin flex-c () {
+    display: flex;
+    flex-direction: column;
+
+}
+@mixin stuff (){
+    background: #F1F1F1;
+    border-radius: 8px;
+    position: relative;
+    width: 350px;
+    height: 204px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin nav {
+    ul {
+        min-width: 549px;
+        gap: 34px;
+        justify-content: start;
+      }
+      a {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      a:hover {
+        color: #d87d4a;
+        transition: all 0.5s ease-in-out;
+      }
+}
+%title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 24px;
+  }
+  %title_2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  %text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: $f-c-w075;
+    margin-bottom: 40px;
+  }
+%strong{
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      color: $f-c-w05;
+}
+
+%product_bkg{
+    width: 540px;
+    height: 560px;
+    background: $bkg-section;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
